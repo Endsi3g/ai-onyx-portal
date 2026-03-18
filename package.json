@@ -1,6 +1,12 @@
 {
-  "dependencies": {
-    "axios": "^1.13.6",
-    "lucide-react": "^0.577.0"
+  "name": "ai-onyx-portal-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd server && node index.js\" \"cd client && npm run dev\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
